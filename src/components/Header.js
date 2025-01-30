@@ -4,7 +4,7 @@ import Logo from '../assets/hh-removebg-preview.png';
 
 const Header = () => {
   return (
-    <header className='py-8 mb-14 h-[150px]'>
+    <header className='py-8 mb-14 h-[10px]'>
       <div className='container mx-auto'>
         <div className='flex justify-between items-center'>
           
