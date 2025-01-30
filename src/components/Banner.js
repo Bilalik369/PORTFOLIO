@@ -1,9 +1,9 @@
 import React from 'react';
-//images
+// images
 import Image from '../assets/astr-removebg-preview.png';
-//icones
+// icons
 import { FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
-//types animation 
+// types animation
 import { TypeAnimation } from 'react-type-animation';
 //motion
 import { motion } from 'framer-motion';
@@ -13,23 +13,17 @@ import { fadeIn } from '../variants';
 const Banner = () => {
   return (
     <section className="section" id="home">
-      <div className="container mx-auto">
-        <div>
-          <div >
-            <h1 >
-              IKEN <span>BILAL</span>
+      <div className="container mx-auto flex items-center justify-center min-h-screen">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-center gap-8 text-center lg:text-left">
+          
+          <div className="lg:w-1/2 max-w-md">
+            <h1 className="text-[50px] font-bold leading-[0.8] lg:text-[90px]">
+              IKEN <span className="text-accent">BILAL</span>
             </h1>
-            <div>
+            <div className="mb-6 text-[28px] lg:text-[50px] font-secondary font-semibold uppercase leading-[1]">
               <span className="text-white mr-4">I am a </span>
               <TypeAnimation
-                sequence={[
-                  'Developer',
-                  2000,
-                  'Designer',
-                  2000,
-                  'Programmer',
-                  2000,
-                ]}
+                sequence={['Developer', 2000, 'Designer', 2000, 'Programmer', 2000]}
                 speed={50}
                 className="text-accent"
                 wrapper="span"
@@ -37,15 +31,15 @@ const Banner = () => {
               />
             </div>
             <p className="mb-8 max-w-lg mx-auto lg:mx-0">
-              loremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremloremlorem
+              I am passionate about creating beautiful and functional solutions.
             </p>
-            <div className="flex max-w-max gap-x-6 items-center mb-1 mx-auto lg:mx-0">
+            <div className="flex justify-center lg:justify-start gap-x-6 items-center mb-8">
               <button className="btn btn-lg">Contact Me</button>
               <a href="#" className="text-gradient btn-link">
                 My Portfolio
               </a>
             </div>
-            <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
+            <div className="flex justify-center lg:justify-start text-[20px] gap-x-6">
               <a href="#" className="ml-3">
                 <FaLinkedin />
               </a>
@@ -57,9 +51,11 @@ const Banner = () => {
               </a>
             </div>
           </div>
-        </div>
-        <div>
-          <img src={Image} alt="Profile" />
+
+          
+          <div className="lg:w-1/2 flex justify-center">
+            <img src={Image} alt="Profile" className="w-[250px] lg:w-[350px] rounded-full shadow-lg" />
+          </div>
         </div>
       </div>
     </section>

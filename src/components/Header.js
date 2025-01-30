@@ -1,22 +1,22 @@
 import React from 'react';
 //images
-import Logo from '../assets/logo.svg';
-
+import Logo from '../assets/hh-removebg-preview.png';
 
 const Header = () => {
-  return <header className='py-8 mb-14'>
-    <div className='container mx-auto'>
-      <div className='flex justify-between items-center'>
-        
-        <a href='#'> 
-          <img src= {Logo} alt=''/>
-        </a>
+  return (
+    <header className='py-8 mb-14 h-[150px]'>
+      <div className='container mx-auto'>
+        <div className='flex justify-between items-center'>
+          
+          <a href='#'>
+            <img src={Logo} alt="Logo" className="w-[80px] h-[80px]" />
+          </a>
 
-        <button className='btn btn-sm'>work with me </button>
+          <button className='btn btn-sm'>Work with me</button>
+        </div>
       </div>
-    </div>
-
-  </header>;
+    </header>
+  );
 };
 
 export default Header;
