@@ -20,6 +20,9 @@ const About = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: inView ? 1 : 0 }}
             transition={{ duration: 1 }}
+            style={{
+              transform: 'translateY(-80px)',
+            }}
           >
           </motion.div>
 
