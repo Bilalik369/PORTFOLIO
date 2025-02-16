@@ -60,7 +60,7 @@ const Nav = () => {
             spy={true} 
             smooth={true} 
             duration={500}
-            className="cursor-pointer hover:text-white/80 transition-colors duration-300"
+            className="cursor-pointer hover:text-wهhite/80 transition-colors duration-300"
           >
             <BsChatSquare size={30} />
           </Link>
